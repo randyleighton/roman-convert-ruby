@@ -1,14 +1,14 @@
 require ("rspec")
-require ("roman_num")
+require ("roman_convert")
 
-describe "roman_num" do
+describe "roman_convert" do
 
   it "converts a Roman numeral to an integer" do
-      expect("MMCIV".to_arabic).to eq 2054
-    end
+    expect(to_roman("4")).to eq "IV"
+  end
  
-    it "converts 'IV' to 4" do
-      expect("IV".to_arabic).to eq 4
-    end
+  it "converts 'IV' to 4" do
+    expect(to_roman("1000")).to eq "M"
+  end
   
 end
